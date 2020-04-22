@@ -1,0 +1,44 @@
+@media screen and (min-width:450px)
+{
+    .hiddenmobile
+    {
+        visibility: hidden;
+        display: none;
+    }
+    .hiddenmobile2
+    {
+        background-color: #6c757d;
+        border-radius: 20px;
+        width: 80%;
+        margin: auto;
+    }
+    footer
+    {
+        visibility: hidden;
+        display: none;
+    }
+}
+@media screen and (max-width:450px)
+{
+    .hiddenmobile2
+    {
+        visibility: hidden;
+        display: none;
+    }
+    .hiddenmobile
+    {
+        background-color: #6c757d;
+        border-radius: 20px;
+        width: 80%;
+        margin: auto;
+    }
+    h1
+    {
+        font-size: 1em;
+    }
+    main
+    {
+        margin-top: 37px;
+    }
+    
+}
