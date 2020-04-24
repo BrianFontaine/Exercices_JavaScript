@@ -17,41 +17,35 @@ let returnThirdIndex = function (array) {
 //Exercice 4 : Changer le 2ème élément du tableau languages par php.', function() {
 let changeSecondElement = function (array) {
   array.splice(1, 1, 'php');
-  alert(array)
   return array;
 }
 
 //Exercice 5 : Ajouter ruby et python à la fin du tableau languages.', function() {
 let addAtTheEnd = function (array) {
   array.splice(4, 1,'ruby', 'python');
-  alert(array)
   return array;
 }
 //Exercice 6 : Ajouter html et css au début du tableau languages.', function() {
 let addAtFirst = function (array) {
   array.splice(0, 0,'html', 'css');
-  alert(array)
   return array;
 }
 
 //Exercice 7 : Supprimer le premier élément du tableau languages.', function() {
 let removeFirstElement = function (array) {
   array.splice(0, 1,);
-  alert(array);
   return array;
 }
 
 //Exercice 8 : Supprimer le dernier élément du tableau languages.', function() {
-let removeLastElement = function (array) {
-  
+let removeLastElement = function (array) { 
   array.pop();
-  alert(array);
   return array;
 }
 
 //Exercice 9 : Créer un tableau associatif person. Lui ajouter les index name, age et city avec les valeurs Jean, 45, Paris.', function() {
 let createPerson = function () {
-  
+  let person = {nom: "Jean" ,age = 45, city = "Paris"};
   alert(person);
   return person;
 }
