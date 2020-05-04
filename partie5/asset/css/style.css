@@ -45,3 +45,31 @@ footer
 {
     font-style: italic;
 }
+.focus
+{
+    border: black solid 2px;
+}
+p.text-scroll
+{
+    transition: all 2s ease-in-out;
+}
+.text-scroll
+{
+    color: whitesmoke;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(0deg, rgba(144,84,196,1) 0%, rgba(253,45,45,1) 100%);
+    
+}
+p.text-scrollOut
+{
+    transition: all 2s ease-in-out;
+    background: linear-gradient(0deg, rgba(0,9,245,1) 0%, rgba(147,115,27,1) 40%, rgba(171,31,170,1) 64%, rgba(253,45,45,1) 100%);
+}
+thead
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

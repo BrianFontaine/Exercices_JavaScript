@@ -47,21 +47,26 @@
             </div>
         </nav>
 
+
     </header>
-    <main id="exo1p2" class="justify-content-center d-flex">
-        <form id="inscription" class="col-8">
+    <main id="exo1p2"  class="d-flex justify-content-center">
+        <form class="col-8" id="inscription">
             <div class="form-group">
-                <label for="exampleInputPassword2">Password</label>
+                <label for="email2">Email</label>
+                <input name="email" type="text" class="form-control" id="email" placeholder="Email" >
+              </div>
+            <div class="form-group">
+                <label for="mdp">Password</label>
                 <input name="password" type="password" class="form-control" id="mdp" placeholder="Password" >
               </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
+              <label for="c_mdp">Password</label>
               <input name="password" type="password" class="form-control" id="c_mdp" placeholder="Confirm Password" >
             </div>
             <button type="submit" class="btn btn-primary" value="inscription">Submit</button>
+            <p class="bg-danger d-flex justify-content-center h3 text-light" id="erreur"></p>
           </form>
-          <p class="bg-danger d-flex justify-content-center h3 text-light" id="erreur"></p>
-          <p class="bg-succesr d-flex justify-content-center h3 text-light" id="good"></p>
+          
     </main>
     <footer>
 
@@ -69,7 +74,7 @@
     <script src="asset/Libs/js/jquery-3.4.1.min.js"></script>
     <script src="asset/Libs/js/bootstrap.bundle.js"></script>
     <script src="https://kit.fontawesome.com/b3f34b62ee.js" crossorigin="anonymous"></script>
-    <script src="asset/js/scriptexo2p_5.js"></script>
+    <script src="asset/js/scriptexo6p_5.js"></script>
 </body>
 
 </html>

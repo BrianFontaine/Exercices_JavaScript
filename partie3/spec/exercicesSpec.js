@@ -75,7 +75,7 @@ describe("Exercice 9", function() {
   it("Afficher true le type du paramètre d'entrée de la fonction.", function() {
     let sentence = "Informatique : Alliance d'une science inexacte et d'une activité humaine faillible.";
     let proposition = isString(sentence);
-    let answer = "string";
+    let answer = true;
     expect(proposition).toEqual(answer);
   });
 });

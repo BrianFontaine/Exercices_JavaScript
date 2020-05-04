@@ -45,29 +45,10 @@ footer
 {
     font-style: italic;
 }
-thead ,table ,h1 ,td, tr
-{
+
+p,form{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
-}
-tr
-{
-    border: solid 2px black;
-    width:30%;
-    margin-left: 35%;
-    background-color: red;
-    font-size: 1.5em;
-    color: lightgrey;
-}
-h1
-{
-    background-color: lightblue;
-    width:35%;
-    margin-left: 33%;
-}
-body
-{
-    background-color: lightgrey;
 }

@@ -1,28 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercices JavaScript</title>
-    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" sizes="16x16" class="favicon">
-    <link rel="stylesheet" href="asset/Libs/css/all.css">
-    <link rel="stylesheet" href="asset/Libs/css/bootstrap.css">
-    <link rel="stylesheet" href="asset/css/screen.css">
+    <title>Ecercices n°1 Partie 7</title>
+    <link rel="stylesheet" href="asset/libs/css/all.css">
+    <link rel="stylesheet" href="asset/libs/css/bootstrap.css">
     <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/screen.css">
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-center text-light">
             <a class="navbar-brand " href="/index.html"><i class="fab fa-js-square"></i> </a>
             <h1>Exercices JavaScript</h1>
-        
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
             <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -46,20 +37,22 @@
                 </ul>
             </div>
         </nav>
-
-
     </header>
-    <main> 
-            <a name="img"></a>
-            <a href="#img" onMouseOut="initial()" onMouseOver="changer()" ><img id = "myImage" onclick = "changeImage()" src="https://www.w3schools.com/js/pic_bulboff.gif"></a>
-    </main>
-    <footer>
-
-    </footer>
-    <script src="asset/Libs/js/jquery-3.4.1.min.js"></script>
-    <script src="asset/Libs/js/bootstrap.bundle.js"></script>
+    <form class="" action="#">
+        <div class="form-group col-5 d- flex justify-content-center">
+            <div class="form-group">
+                <label for="number1">Choisisez un nombre !</label>
+                <input class="form-control" type="text" name="number1" id="number1">
+            </div>
+            <div class="form-group"> 
+                <label for="number2">Choisisez un nombre !</label>
+                <input class="form-control" type="text" name="number2" id="number2">
+            </div>
+    </form>
+        <button  class="btn btn-primary" onclick="multiNb1Nb2()">Calcul de la multiplication</button>
+    <script src="asset/libs/js/bootstrap.bundle.js"></script>
+    <script src="asset/libs/js/jquery-3.4.1.min.js"></script>
     <script src="https://kit.fontawesome.com/b3f34b62ee.js" crossorigin="anonymous"></script>
-    <script src="asset/js/scriptexo4p_5.js"></script>
+    <script src="asset/js/scriptexo1p_7.js"></script>
 </body>
-
 </html>
