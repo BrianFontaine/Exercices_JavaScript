@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="asset/css/cleav.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="centerform">
+    <form action="" method="post">
+        <div>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" class="" placeholder="Fontaine">
+        </div>
+        <div>
+            <label for="lastname">Prenom :</label>
+            <input type="text" id="lastname" class="" placeholder="Brian">
+        </div>
+        <div>
+            <label for="phone">Téléphone :</label>
+            <input type="phone" id="phone" class="input-phone"  placeholder="06-14-78-95-85" >
+            <select id="select-country" type="country">
+                <option value="fr">FR</option>
+            </select>
+        </div>  
+        <div>
+            <label for="dateofolder">Date de commande :</label>
+            <input type="text" id="dateofolder" class="date" placeholder="17-12-2020">
+        </div>
+        <div>
+            <label for="numbercart">Numero de carte bancaire :</label>
+            <input type="text" id="numbercart" class="card" placeholder="5137 **** **** 9854">
+        </div>
+        <div class="cb">
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-amex"></i>
+            <i class="fab fa-cc-jcb"></i>
+            <i class="fab fa-cc-discover"></i>
+            <i class="fab fa-cc-diners-club"></i>
+        </div>
+        <div>
+            <button type="submit" class="" id="enter">Commander</button>
+        </div>
+    </form>
+</div>
+    <script src="https://kit.fontawesome.com/b3f34b62ee.js" crossorigin="anonymous"></script>
+    <script src="asset/libs/js/cleave.js"></script>
+    <script src="asset/libs/js/cleave-phone.fr.js"></script>
+    <script src="asset/js/script.js"></script>
+</body>
+</html>

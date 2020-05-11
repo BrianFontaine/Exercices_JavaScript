@@ -1,13 +1,11 @@
 
-let firstNumber = Math.round(Math.random()*10);
-let secondNumber =Math.round(Math.random()*10);
+let firstNumber = Math.floor(Math.random()*9)+2;
+let secondNumber =Math.floor(Math.random()*9)+2;
 
 let tbody = document.querySelector('tbody');
-for(var i=0; i < 100 ; i++)
+while(firstNumber *secondNumber < 250 )
 {
     secondNumber = firstNumber *secondNumber;
-    if ( secondNumber < 250)
-    {
         // On crée la une ligne
         let tr = document.createElement('tr');
         // On crée la cellule
@@ -18,7 +16,5 @@ for(var i=0; i < 100 ; i++)
         tr.appendChild(td);
         // insére la ligne dans le tableau
         tbody.appendChild(tr);
-        secondNumber = Math.round(Math.random()*10);
-    }
 }
 

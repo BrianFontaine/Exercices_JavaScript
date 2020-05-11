@@ -1,23 +1,22 @@
-let firstNumber =  Math.round(Math.random()*10);
-let secondNumber = Math.round(Math.random()*10);
+
+let firstNumber = Math.floor(Math.random()*10) + 1;
+let secondNumber = Math.floor(Math.random()*10) + 1;
 
 let tbody = document.querySelector('tbody');
-for(var i=0; i < 100 ; i++)
-{
-    firstNumber = firstNumber /secondNumber;
-    if ( firstNumber >= 1)
-    {
-        // On crée la une ligne
-        let tr = document.createElement('tr');
-        // On crée la cellule
-        let td = document.createElement('td');
-        // Insére le calcul dans la cellule
-        td.textContent = parseInt(firstNumber);
-        // insére la cellule dans une ligne
-        tr.appendChild(td);
-        // insére la ligne dans le tableau
-        tbody.appendChild(tr);
-        firstNumber = Math.round(Math.random()*10);
-    }
-}
 
+do {
+    firstNumber /= secondNumber;
+    if(firstNumber < 1 ){
+        break;
+    }
+            // On crée la une ligne
+            let tr = document.createElement('tr');
+            // On crée la cellule
+            let td = document.createElement('td');
+            // Insére le calcul dans la cellule
+            td.textContent = firstNumber;
+            // insére la cellule dans une ligne
+            tr.appendChild(td);
+            // insére la ligne dans le tableau
+            tbody.appendChild(tr);
+}while(true);

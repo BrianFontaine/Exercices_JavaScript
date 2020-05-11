@@ -52,3 +52,7 @@ p,form{
     flex-wrap: wrap;
     justify-content: center;
 }
+.text-grand
+{
+    font-size: 20px;
+}

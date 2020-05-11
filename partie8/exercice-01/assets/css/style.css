@@ -1,0 +1,88 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: tomato;
+}
+h1
+{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: -20px;
+    text-shadow: 3px 1px 1px lightblue;
+}
+h2
+{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
+    text-shadow: 3px 1px 1px lightblue;
+}
+p
+{
+    text-align: center;
+    padding: 10;
+    margin: 10;
+    color: white;
+    font-weight: 900;
+    width: 80%;
+    margin: auto;
+}
+/* .button-scroll-haut
+{
+    visibility: hidden;
+    display: none;
+    transition: ease-in 2s;
+}
+.button-scroll-Bas
+{
+    background-color: rgba(100, 100, 100, 0.6);
+    height: 50px;
+    width: 50px;
+    border: none;
+    font-size: 35px;
+    font-weight: 900;
+    color: honeydew;
+    text-align: center;
+    border-radius: 30%;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 10px;
+    margin-left: 95%;
+    text-shadow: 3px 1px 1px black;
+} */
+#scrollTop {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+    border-radius: 50%;
+    margin-left: auto;
+    position: relative;
+    right: 5%;
+    bottom: 20px;
+}
+
+#scrollTop:hover {
+    background-color: coral;
+}
+
+.arrow {
+    font-size: 2.5em;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow-animation {
+    animation: 1s infinite alternate arrow cubic-bezier(0.790, 0.150, 0.180, 0.750);
+}
+
+@keyframes arrow {
+    to {
+        top: 53%;
+    }
+}
