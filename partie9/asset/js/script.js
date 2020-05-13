@@ -1,5 +1,5 @@
-document.querySelector('body');
-console.clear();
+// document.querySelector('body');
+
 
 var cleave = new Cleave('.input-phone', {
     phone: true,
@@ -15,40 +15,17 @@ var cleave = new Cleave('.date', {
 var cleave = new Cleave('.card', {
     creditCard: true,
     onCreditCardTypeChanged: function (type) {
-        if (type == 'visa') 
+        typeOfCard(type);
+    }
+});
+
+function typeOfCard (type){
+    
+    document.querySelectorAll('.fab').forEach(function(icon){
+        icon.classList.remove('active');
+        if (icon.classList.contains('fa-cc-'+type)) 
         {
-            document.querySelector('.fa-cc-visa').classList.add('active')
-        }else 
-        {
-            document.querySelector('.fa-cc-visa').classList.remove('active')
-        }
-        if (type == 'mastercard') 
-        {
-            document.querySelector('.fa-cc-mastercard').classList.add('active')
-        }else 
-        {
-            document.querySelector('.fa-cc-mastercard').classList.remove('active')
-        }
-        if (type == 'amex') 
-        {
-            document.querySelector('.fa-cc-amex').classList.add('active')
-        }else 
-        {
-            document.querySelector('.fa-cc-amex').classList.remove('active')
-        }
-        if (type == 'jcb') 
-        {
-            document.querySelector('.fa-cc-jcb').classList.add('active')
-        }else 
-        {
-            document.querySelector('.fa-cc-jcb').classList.remove('active')
-        }
-        if (type == 'discover') 
-        {
-            document.querySelector('.fa-cc-discover').classList.add('active')
-        }else 
-        {
-            document.querySelector('.fa-cc-discover').classList.remove('active')
+            icon.classList.add('active');
         }
         if (type == 'diners') 
         {
@@ -57,15 +34,5 @@ var cleave = new Cleave('.card', {
         {
             document.querySelector('.fa-cc-diners-club').classList.remove('active')
         }
-    }
-});
-
-
-
-
-
-
-
-
-
-
+    });
+}
